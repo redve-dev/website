@@ -37,9 +37,18 @@
 
 #menubar {
 	height: 100%; 
+	width: 10%;
+	float: left;
+	background-color: green;
+	transition: 0.5s;
+}
+
+#menubar:hover {
+	height: 100%; 
 	width: 30%;
 	float: left;
 	background-color: green;
+	transition: 0.5s;
 }
 
 #content {
@@ -49,11 +58,25 @@
 	background-color: blue;
 }
 
-#button {
+#menubar #button {
+	visibility: hidden;
+}
+
+#menubar:hover #button {
+	visibility: visible;
 	position: static;
 	margin-top: 10px;
 	margin-left: 10px;
 	border: 1px solid black;
 	width: 70%;
 	float: left;
+	opacity: 0.5;
+	transition: 0.5s;
+	font-size: 15px;
+}
+
+#button:hover {
+	opacity: 1;
+	transform: scale(1.1);
+	transition: 0.5s;
 }
