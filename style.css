@@ -12,6 +12,9 @@
 }
 
 #name {
+	position: relative;
+	top: 60%;
+	left: 40%;
 	text-align: center;
 	font-size: 30px;
 	font-family: 'Roboto', sans-serif;
@@ -20,14 +23,13 @@
 }
 
 #photo {
-	position: static;
-	height: 100%;
-	width: 20%;
+	position: relative;
+	right: 1%;
+	bottom: 1%;
+	display: inline-block;
 	background-color: white;
+	padding: 10px;
 	float: right;
-	margin-right: 100px;
-	align-content: center;
-	box-sizing: border-box;
 	background-color: pink;
 	border-radius: 50%;
 }
