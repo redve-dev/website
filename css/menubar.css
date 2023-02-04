@@ -1,0 +1,50 @@
+#menubar {
+	height: 100%; 
+	width: 10%;
+	float: left;
+	background-color: green;
+	transition: 0.5s;
+}
+
+#menubar:hover {
+	background-color: green;
+	transition: 0.5s;
+	width: 20%;
+}
+
+#menubar:hover > #content {
+	width: calc(100% - 20%);
+	float: right;
+	transition: 0.5s;
+}
+
+#menubar:hover .button {
+	transform: translateX(0%);
+}
+
+#menubar > #content {
+	width: 90%;
+	float: right;
+	transition: 0.5s;
+}
+
+
+.button {
+	transform: translateX(-100%);
+	visibility: visible;
+	position: relative;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid black;
+	width: 100%;
+	height: auto;
+	float: left;
+	transition: 0.5s;
+	font-size: 15px;
+}
+
+.button:hover {
+	opacity: 1;
+	transition: 0.5s;
+}
