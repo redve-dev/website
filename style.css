@@ -50,10 +50,9 @@ body {
 }
 
 #menubar:hover {
-	height: 100%; 
-	width: 20%;
-	float: left;
+	background-color: green;
 	transition: 0.5s;
+	width: 20%;
 }
 
 #menubar:hover > #content {
