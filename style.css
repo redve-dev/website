@@ -32,6 +32,7 @@ body {
 	position: relative;
 	right: 1%;
 	bottom: 1%;
+	transform: scale(0.8, 1);
 
 	display: inline-block;
 	background-color: white;
@@ -61,7 +62,7 @@ body {
 	transition: 0.5s;
 }
 
-#menubar:hover #button {
+#menubar:hover .button {
 	transform: translateX(0%);
 }
 
@@ -75,10 +76,10 @@ body {
 	height: calc(100% - 20%);
 	transition: 0.5s;
 	background-color: blue;
-	padding-left: 10px;
+	box-sizing: border-box;
 }
 
-#button {
+.button {
 	transform: translateX(-100%);
 	visibility: visible;
 	position: relative;
@@ -93,7 +94,15 @@ body {
 	font-size: 15px;
 }
 
-#button:hover {
+.button:hover {
 	opacity: 1;
 	transition: 0.5s;
+}
+
+#text {
+	padding-top: 0;
+	position: static;
+	background-color: white;
+	top: 20px;
+	left: 20px;
 }
