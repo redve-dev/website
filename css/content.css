@@ -1,0 +1,13 @@
+#content {
+	height: calc(100% - 20%);
+	transition: 0.5s;
+	background-color: blue;
+}
+
+#text {
+	position: relative;
+	margin-top: 0;
+	top: 5%;
+	left: 1%;
+	width: 99%;
+}

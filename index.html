@@ -2,7 +2,10 @@
 	<head>
 		<title>My First Web Page</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-16">
-		<link type="text/css" rel="stylesheet" href="style.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+		<link type="text/css" rel="stylesheet" href="css/menubar.css" />
+		<link type="text/css" rel="stylesheet" href="css/content.css" />
+		<link type="text/css" rel="stylesheet" href="css/header.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
 	</head>
 	<body>
@@ -14,19 +17,15 @@
 				<img id="photo" src="img/photo.png" alt="photo" width="200" height="200">
 			</div>
 			<div id="menubar">
-				<a id="button" href="index.html">About me</a>
-			</div>
-			<div id="menubar">
-				<a id="button" href="index.html">My projects</a>
-			</div>
-			<div id="menubar">
-				<a id="button" href="index.html">My Gitea</a>
-			</div>
-			<div id="menubar">
-				<a id="button" href="index.html">My contacts</a>
+				<div class="button" id="aboutme">About me</div>
+				<div class="button" id="projects">My projects</div>
+				<div class="button" id="gitea">My Gitea</div>
+				<div class="button" id="contacts">My contacts</div>
 			</div>
 			<div id="content">
-				lorem ipsum
+				<p id="text">
+					lorem ipsum
+				</p>
 			</div>
 		</div>
 	</body>
