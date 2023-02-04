@@ -32,6 +32,7 @@ body {
 	position: relative;
 	right: 1%;
 	bottom: 1%;
+
 	display: inline-block;
 	background-color: white;
 	padding: 10px;
@@ -62,15 +63,16 @@ body {
 }
 
 #menubar:hover #button {
+	transform: translateX(0%);
 	visibility: visible;
-	position: static;
-	margin-top: 10px;
-	margin-left: 10px;
+	position: relative;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
 	border: 1px solid black;
-	width: 80%;
-	height: 10%;
+	width: 100%;
+	height: auto;
 	float: left;
-	opacity: 0.5;
 	transition: 0.5s;
 	font-size: 15px;
 }
@@ -87,8 +89,14 @@ body {
 	background-color: blue;
 }
 
+#button {
+	position: absolute;
+	margin-top: 10px;
+	transform: translateX(-100%);
+	padding-top: 10px;
+}
+
 #button:hover {
 	opacity: 1;
-	transform: scale(1.1);
 	transition: 0.5s;
 }
