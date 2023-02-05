@@ -1,25 +1,13 @@
 #menubar {
-	height: calc(100% - 15%);
-	width: 100vw;
-	float: left;
-	top: 15%;
 	background-color: green;
 	transition: 0.5s;
 	z-index: 1;
-	flex: 1;
-	flex-grow: 1;
 }
 
 #menubar:hover {
 	background-color: green;
 	transition: 0.5s;
 	width: min(20%, 200px);
-}
-
-#menubar:hover > #content {
-	width: 10%;
-	float: right;
-	transition: 0.5s;
 }
 
 #menubar:hover > .button {
