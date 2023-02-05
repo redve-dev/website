@@ -1,5 +1,4 @@
 #menubar {
-	position: fixed;
 	height: calc(100% - 15%);
 	width: max(5%, 100px);
 	float: left;
@@ -7,6 +6,8 @@
 	background-color: green;
 	transition: 0.5s;
 	z-index: 1;
+	flex: 1;
+	flex-grow: 1;
 }
 
 #menubar:hover {
