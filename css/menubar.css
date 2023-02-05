@@ -1,6 +1,6 @@
 #menubar {
 	height: calc(100% - 15%);
-	width: max(5%, 100px);
+	width: 100vw;
 	float: left;
 	top: 15%;
 	background-color: green;
