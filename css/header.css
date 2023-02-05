@@ -19,8 +19,8 @@
 }
 
 #photo {
-	position: static;
-	right: 1%;
+	position: relative;
+	right: 10%;
 	bottom: 1%;
 
 	background-color: white;
