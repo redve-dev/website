@@ -1,11 +1,10 @@
 #header {
-	position: fixed;
-	width: 100%;
-	height: 15%;
+	width: 100vw;
+	height: 15vh;
 	background-color: #222;
 	padding-top: 30px;
 	box-sizing: border-box;
-	z-index: 1;
+	z-index: 99;
 	text-align: center;
 }
 
@@ -19,8 +18,8 @@
 }
 
 #photo {
-	position: static;
-	right: 1%;
+	position: relative;
+	right: 10%;
 	bottom: 1%;
 
 	background-color: white;
