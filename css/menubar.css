@@ -3,7 +3,7 @@
 	transition: 0.5s;
 	z-index: 1;
 	overflow-y: scroll;
-	width: 5%;
+	width: min(5%, 70px);
 	display: flex;
 	flex-direction: column;
 }
