@@ -14,7 +14,6 @@
 	top: calc(90% - 50px);
 	font-size: 50px;
 	font-family: 'Roboto', sans-serif;
-	border: 1px solid black;
 	display: inline-block;
 	text-shadow: 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white;
 }
