@@ -19,6 +19,7 @@
 }
 
 .button {
+	border: none;
 	transform: translateX(-200%);
 	position: relative;
 	margin-top: 5px;
