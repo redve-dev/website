@@ -11,8 +11,8 @@ function showText(text_fields, id){
 
 function main(){
 	const buttons_ids = ["aboutme", "projects", "contact", "gitea"];
-	buttons = new Map();
-	text_fields = new Map();
+	const buttons = new Map();
+	const text_fields = new Map();
 	for(let button of buttons_ids){
 		buttons.set(button, document.querySelector(".button#" + button));
 		text_fields.set(button, document.querySelector(".text#" + button));
