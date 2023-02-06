@@ -7,10 +7,26 @@
 	overflow-y: scroll;
 }
 
-#text {
+.text {
 	position: relative;
 	margin-top: 0;
 	top: 1%;
 	left: 1%;
 	overflow-y: scroll;
+}
+
+#aboutme {
+	display: none;
+}
+
+#gitea {
+	display: none;
+}
+
+#projects {
+	display: none;
+}
+
+#contact {
+	display: none;
 }
