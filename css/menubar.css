@@ -26,6 +26,7 @@
 	height: calc((100% - 15%) / 4);
 	transition: 0.5s;
 	font-size: 15px;
+	background-color: green;
 }
 
 .button:hover {
