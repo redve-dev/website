@@ -1,14 +1,29 @@
-const content = document.getElementById("text");
-const buttons_ids = ["aboutme", "projects", "contact", "gitea"];
-const buttons = new Map();
-for(let button of buttons_ids){
-	buttons.set(button, document.getElementById(button));
+function hideAll(text_fields){
+	for(let text_field of text_fields.values()){
+		text_field.style.display = "none";
+	}
 }
 
-buttons.get("aboutme").onclick = function(){
-	content.innerHTML = "About me";
+function showText(text_fields, id){
+	hideAll(text_fields);
+	text_fields.get(id).style.display = "block";
 }
 
-buttons.get("projects").onclick = function(){
-	content.innerHTML = "Projects";
+function main(){
+	const buttons_ids = ["aboutme", "projects", "contact", "gitea"];
+	buttons = new Map();
+	text_fields = new Map();
+	for(let button of buttons_ids){
+		buttons.set(button, document.querySelector(".button#" + button));
+		text_fields.set(button, document.querySelector(".text#" + button));
+	}
+	for(let button of buttons.values()){
+		button.addEventListener("click", function(){
+			showText(text_fields, button.id);
+		});
+	}
+	hideAll(text_fields);
+	showText(text_fields, "aboutme");
 }
+
+main();

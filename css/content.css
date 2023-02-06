@@ -15,18 +15,18 @@
 	overflow-y: scroll;
 }
 
-#aboutme {
+#aboutme.text {
 	display: none;
 }
 
-#gitea {
+#gitea.text {
 	display: none;
 }
 
-#projects {
+#projects.text {
 	display: none;
 }
 
-#contact {
+#contact.text {
 	display: none;
 }
