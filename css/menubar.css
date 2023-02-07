@@ -10,7 +10,6 @@
 
 #menubar:hover {
 	background-color: green;
-	transition: 0.5s;
 	width: min(20%, 200px);
 }
 
