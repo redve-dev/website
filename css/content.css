@@ -1,5 +1,6 @@
 #content {
 	float: right;
+	height: 100vh;
 	transition: 0.5s;
 	background-color: blue;
 	z-index: 0;
@@ -10,6 +11,7 @@
 .text {
 	position: relative;
 	margin-top: 0;
+	right: 1%;
 	top: 1%;
 	left: 1%;
 	overflow-y: scroll;
