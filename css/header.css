@@ -1,6 +1,7 @@
 #header {
 	width: 100vw;
-	height: 15vh;
+	/*height: 15vh;*/
+	height: calc(auto + 5hv);
 	background-color: #222;
 	padding-top: 30px;
 	box-sizing: border-box;
@@ -20,8 +21,7 @@
 #photo {
 	position: relative;
 	right: 10%;
-	bottom: 1%;
-
+	bottom: 5%;
 	background-color: white;
 	float: right;
 	object-fit: contain;
