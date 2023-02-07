@@ -22,7 +22,6 @@ function main(){
 			showText(text_fields, button.id);
 		});
 	}
-	hideAll(text_fields);
 	showText(text_fields, "aboutme");
 }
 
