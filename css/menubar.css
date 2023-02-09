@@ -1,5 +1,5 @@
 #menubar {
-	background-color: green;
+	background-color: #243763;
 	transition: 0.5s;
 	z-index: 1;
 	overflow-y: scroll;
@@ -9,7 +9,7 @@
 }
 
 #menubar:hover {
-	background-color: green;
+	/*background-color: green;*/
 	width: min(20%, 200px);
 }
 
@@ -26,12 +26,12 @@
 	height: calc((100% - 15%) / 4);
 	transition: 0.5s;
 	font-size: 15px;
-	background-color: green;
+	background-color: #344773;
 }
 
 .button:hover {
 	transition: 0.5s;
-	background-color: #222;
+	background-color: #FF5E51;
 }
 
 .button:active {
