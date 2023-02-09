@@ -1,5 +1,5 @@
 #menubar {
-	background-color: #243763;
+	background-color: #16253f;
 	transition: 0.5s;
 	z-index: 1;
 	overflow-y: scroll;
@@ -25,13 +25,15 @@
 	width: 100%;
 	height: calc((100% - 15%) / 4);
 	transition: 0.5s;
-	font-size: 15px;
-	background-color: #344773;
+	font-size: 20px;
+	color: white;
+	background-color: #26355f;
+	border-radius: 5%;
 }
 
 .button:hover {
 	transition: 0.5s;
-	background-color: #FF5E51;
+	background-color: #ed3d36;
 }
 
 .button:active {

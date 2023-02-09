@@ -2,10 +2,11 @@
 	float: right;
 	height: 100vh;
 	transition: 0.5s;
-	background-color: blue;
+	background-color: #fffeff;
 	z-index: 0;
 	width: 100vw;
 	overflow-y: scroll;
+	font-size: 20px;
 }
 
 .text {
