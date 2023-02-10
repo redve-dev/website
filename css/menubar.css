@@ -1,5 +1,7 @@
+* {
+	outline: 1px solid red;
+}
 #menubar {
-	border: solid 2px red;
 	background-color: #16253f;
 	transition: 0.5s;
 	z-index: 1;
@@ -40,10 +42,7 @@
 #description {
 	transform: rotate(-90deg);
 	color: red;
-	bottom: 50%;
-	font-size: 30px;
-	opacity: 0.5;
-	z-index: 99999;
+	font-size: 20px;
 }
 
 #menubar_wrapper {
