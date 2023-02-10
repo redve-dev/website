@@ -45,6 +45,11 @@ function main(){
 			disable_dark_mode();
 		}
 	});
+	if(dark_mode_button.checked){
+		enable_dark_mode();
+	} else {
+		disable_dark_mode();
+	}
 }
 
 main();
