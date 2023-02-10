@@ -9,6 +9,13 @@ function showText(text_fields, id){
 	text_fields.get(id).style.display = "block";
 }
 
+function enable_dark_mode(){
+
+}
+
+function disable_dark_mode(){
+}
+
 function main(){
 	const buttons_ids = ["aboutme", "projects", "contact", "gitea"];
 	const buttons = new Map();
@@ -23,6 +30,16 @@ function main(){
 		});
 	}
 	showText(text_fields, "aboutme");
+
+	const dark_mode_button = document.getElementById("darkmode");
+	console.log(dark_mode_button);
+	dark_mode_button.addEventListener("click", function(){
+		if(dark_mode_button.checked){
+			enable_dark_mode();
+		} else {
+			disable_dark_mode();
+		}
+	});
 }
 
 main();
