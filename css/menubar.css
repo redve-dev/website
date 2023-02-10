@@ -17,6 +17,11 @@
 	transform: translateX(0%);
 }
 
+#menubar:hover > #description {
+	transition: 0.5s;
+	display: none;
+}
+
 .button {
 	border: none;
 	transform: translateX(-200%);
@@ -29,6 +34,7 @@
 	color: white;
 	background-color: #26355f;
 	border-radius: 0.5em;
+	z-index: 1;
 }
 
 .button:hover {
@@ -38,4 +44,15 @@
 
 .button:active {
 	background-color: #fd3d36;
+}
+
+#description {
+	position: relative;
+	transform: rotate(-90deg);
+	color: red;
+	bottom: 50%;
+	font-size: 30px;
+	opacity: 0.5;
+	z-index: 99999;
+	float: bottom;
 }
