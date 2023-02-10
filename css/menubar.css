@@ -3,23 +3,14 @@
 	transition: 0.5s;
 	z-index: 1;
 	overflow-y: scroll;
-	width: min(5%, 70px);
 	display: flex;
 	flex-direction: column;
-}
-
-#menubar:hover {
-	width: min(20%, 200px);
+	width: 100%;
 	margin-right: 0.5em;
 }
 
 #menubar:hover > .button {
 	transform: translateX(0%);
-}
-
-#menubar:hover > #description {
-	transition: 0.5s;
-	display: none;
 }
 
 .button {
@@ -47,12 +38,20 @@
 }
 
 #description {
-	position: relative;
 	transform: rotate(-90deg);
 	color: red;
 	bottom: 50%;
 	font-size: 30px;
 	opacity: 0.5;
 	z-index: 99999;
-	float: bottom;
+}
+
+#menubar_wrapper {
+	display: flex;
+	flex-direction: row;
+	width: min(5%, 70px);
+	transition: 0.5s;
+}
+#menubar_wrapper:hover {
+	width: min(20%, 200px);
 }
