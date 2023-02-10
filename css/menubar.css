@@ -9,8 +9,8 @@
 }
 
 #menubar:hover {
-	/*background-color: green;*/
 	width: min(20%, 200px);
+	margin-right: 0.5em;
 }
 
 #menubar:hover > .button {
@@ -28,14 +28,14 @@
 	font-size: 20px;
 	color: white;
 	background-color: #26355f;
-	border-radius: 5%;
+	border-radius: 0.5em;
 }
 
 .button:hover {
 	transition: 0.5s;
-	background-color: #ed3d36;
+	background-color: #9d2500;
 }
 
 .button:active {
-	background-color: #ff0;
+	background-color: #fd3d36;
 }
