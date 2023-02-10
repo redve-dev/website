@@ -34,20 +34,12 @@ function disable_dark_mode(content){
 function setup_dark_mode(){
 	const dark_mode_button: HTMLInputElement = <HTMLInputElement>document.getElementById("darkmode");
 	const content: HTMLElement = document.getElementById("content");
-	dark_mode_button.addEventListener("click", () => {
-		if (dark_mode_button.checked){
-			enable_dark_mode(content);
-		}
-		else{
-			disable_dark_mode(content);
-		}
-	});
-	if (dark_mode_button.checked){
-		enable_dark_mode(content);
+	let dark_mode_switch_function = () => {
+		if (dark_mode_button.checked){ enable_dark_mode(content);}
+		else{ disable_dark_mode(content);}
 	}
-	else{
-		disable_dark_mode(content);
-	}
+	dark_mode_button.addEventListener("click",dark_mode_switch_function);
+	dark_mode_switch_function();
 }
 
 function setup(){
