@@ -9,14 +9,12 @@ function showText(text_fields, id){
 	text_fields.get(id).style.display = "block";
 }
 
-const content = document.querySelector("#content");
-console.log(content);
-function enable_dark_mode(){
-	content.style.background = "black";
+function enable_dark_mode(content){
+	content.style.background = "rgb(60, 60, 60)";
 	content.style.color = "white";
 }
 
-function disable_dark_mode(){
+function disable_dark_mode(content){
 	content.style.background = "white";
 	content.style.color = "black";
 
@@ -26,6 +24,7 @@ function main(){
 	const buttons_ids = ["aboutme", "projects", "contact", "gitea"];
 	const buttons = new Map();
 	const text_fields = new Map();
+	const content = document.querySelector("#content");
 	for(let button of buttons_ids){
 		buttons.set(button, document.querySelector(".button#" + button));
 		text_fields.set(button, document.querySelector(".text#" + button));
@@ -40,15 +39,15 @@ function main(){
 	const dark_mode_button = document.getElementById("darkmode");
 	dark_mode_button.addEventListener("click", function(){
 		if(dark_mode_button.checked){
-			enable_dark_mode();
+			enable_dark_mode(content);
 		} else {
-			disable_dark_mode();
+			disable_dark_mode(content);
 		}
 	});
 	if(dark_mode_button.checked){
-		enable_dark_mode();
+		enable_dark_mode(content);
 	} else {
-		disable_dark_mode();
+		disable_dark_mode(content);
 	}
 }
 
