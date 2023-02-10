@@ -1,8 +1,10 @@
 .switch {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 60px;
   height: 34px;
+  left: 8%;
+  top: 5%;
 }
 
 .switch input { 
@@ -56,4 +58,19 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+.slider.round {
+	content: "OFF";
+}
+
+#on {
+	float: left;
+	color: #2196F3;
+}
+
+#off {
+	float: right;
+	color: #ccc;
 }
