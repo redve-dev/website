@@ -9,11 +9,17 @@ function showText(text_fields, id){
 	text_fields.get(id).style.display = "block";
 }
 
+const content = document.querySelector("#content");
+console.log(content);
 function enable_dark_mode(){
-
+	content.style.background = "black";
+	content.style.color = "white";
 }
 
 function disable_dark_mode(){
+	content.style.background = "white";
+	content.style.color = "black";
+
 }
 
 function main(){
@@ -32,7 +38,6 @@ function main(){
 	showText(text_fields, "aboutme");
 
 	const dark_mode_button = document.getElementById("darkmode");
-	console.log(dark_mode_button);
 	dark_mode_button.addEventListener("click", function(){
 		if(dark_mode_button.checked){
 			enable_dark_mode();
