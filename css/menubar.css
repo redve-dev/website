@@ -1,38 +1,58 @@
 #menubar {
-	background-color: green;
+	background-color: #16253f;
 	transition: 0.5s;
 	z-index: 1;
 	overflow-y: scroll;
-	width: 5%;
+	width: min(5%, 70px);
 	display: flex;
 	flex-direction: column;
 }
 
 #menubar:hover {
-	background-color: green;
-	transition: 0.5s;
 	width: min(20%, 200px);
+	margin-right: 0.5em;
 }
 
 #menubar:hover > .button {
 	transform: translateX(0%);
 }
 
+#menubar:hover > #description {
+	transition: 0.5s;
+	display: none;
+}
+
 .button {
+	border: none;
 	transform: translateX(-200%);
 	position: relative;
 	margin-top: 5px;
 	width: 100%;
 	height: calc((100% - 15%) / 4);
 	transition: 0.5s;
-	font-size: 15px;
+	font-size: 20px;
+	color: white;
+	background-color: #26355f;
+	border-radius: 0.5em;
+	z-index: 1;
 }
 
 .button:hover {
 	transition: 0.5s;
-	background-color: #222;
+	background-color: #9d2500;
 }
 
 .button:active {
-	background-color: #ff0;
+	background-color: #fd3d36;
+}
+
+#description {
+	position: relative;
+	transform: rotate(-90deg);
+	color: red;
+	bottom: 50%;
+	font-size: 30px;
+	opacity: 0.5;
+	z-index: 99999;
+	float: bottom;
 }

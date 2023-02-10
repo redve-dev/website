@@ -1,17 +1,28 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>My First Web Page</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-16">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link type="text/css" rel="stylesheet" href="css/style.css" />
 		<link type="text/css" rel="stylesheet" href="css/menubar.css" />
 		<link type="text/css" rel="stylesheet" href="css/content.css" />
 		<link type="text/css" rel="stylesheet" href="css/header.css" />
 		<link type="text/css" rel="stylesheet" href="css/wrapper.css" />
+		<link type="text/css" rel="stylesheet" href="css/switch.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
 	</head>
 	<body>
 		<div id="main">
 			<div id="header">
+
+				<label class="switch">
+					<input id="darkmode" type="checkbox">
+					<span class="slider round">
+						<div id="on">☀️</div>
+						<div id="off">🌒</div>
+					</span>
+				</label>
+
 				<div id="name">
 					Name Surname
 				</div>
@@ -19,118 +30,34 @@
 			</div>
 			<div id="wrapper">
 				<div id="menubar">
-					<div class="button" id="aboutme">About me</div>
-					<div class="button" id="projects">My projects</div>
-					<div class="button" id="gitea">My Gitea</div>
-					<div class="button" id="contacts">My contacts</div>
+					<button class="button" id="aboutme">About me</button>
+					<button class="button" id="projects">My projects</button>
+					<button class="button" id="gitea">My Gitea</button>
+					<button class="button" id="contact">My contacts</button>
+					<p id="description">Sections</p>
 				</div>
 				<div id="content">
-					<p id="text">
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
-					lorem ipsum <br>
+					<p class="text" id="aboutme">
+					I am a backend developer and data scientist, on the second year of full-time mathematics studies. <br>
+					Interested in theoretical computer science and mathematics.<br>
+					I own a linux server to experiment with Docker and web servers.<br>
+					I am open to learn new technologies. In my free time I usually study algorithms and data structures.
+					</p>
+
+					<p class="text" id="projects">
+					projects
+					</p>
+
+					<p class="text" id="gitea">
+					<a href="http://192.168.0.52:3000">Gitea</a>
+					</p>
+
+					<p class="text" id="contact">
+					email: exampleemail@domain.com
 					</p>
 				</div>
 			</div>
 		</div>
 	</body>
+	<script src="script.js" type="text/javascript"></script>
 </html>

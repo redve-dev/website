@@ -1,7 +1,8 @@
 #header {
 	width: 100vw;
-	height: 15vh;
-	background-color: #222;
+	/*height: 15vh;*/
+	height: calc(auto + 5hv);
+	background-color: #16253f;
 	padding-top: 30px;
 	box-sizing: border-box;
 	z-index: 99;
@@ -14,16 +15,17 @@
 	font-size: 50px;
 	font-family: 'Roboto', sans-serif;
 	display: inline-block;
-	text-shadow: 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white;
+	color: white;
+	text-shadow: 1px 1px 1px black, -1px -1px 1px black, 1px -1px 1px black, -1px 1px 1px black;
 }
 
 #photo {
 	position: relative;
 	right: 10%;
-	bottom: 1%;
-
+	bottom: 5%;
 	background-color: white;
 	float: right;
 	object-fit: contain;
 	border-radius: 20%;
+	scale: 0.8;
 }
