@@ -1,17 +1,26 @@
-/**{*/
-	/*outline: 2px solid red;*/
-/*}*/
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	background-color: #16253f;
+	overflow: hidden;
+}
 
 #menubar {
 	background-color: #16253f;
-	transition: 0.5s;
-	z-index: 1;
 	overflow-y: scroll;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	transform: translateX(-200%);
+	width: 100%;
 	margin-right: 0.5em;
+	margin-left: 0.5em;
 }
 
 #menubar_wrapper:hover > #menubar  {
@@ -20,21 +29,19 @@
 
 .button {
 	white-space: nowrap;
-	border: none;
-	position: relative;
-	margin-top: 5px;
-	width: 100%;
-	height: calc((100% - 15%) / 4);
-	transition: 0.5s;
 	font-size: 20px;
 	color: white;
-	background-color: #26355f;
+	border: none;
+
+	width: 100%;
+	height: calc((100% - 15%) / 4);
+	margin-top: 5px;
 	border-radius: 0.5em;
-	z-index: 1;
+
+	background-color: #26355f;
 }
 
 .button:hover {
-	transition: 0.5s;
 	background-color: #9d2500;
 }
 
@@ -52,15 +59,13 @@
 }
 
 #menubar_wrapper:hover > #description {
-	transition: 0.5s;
+	transition: 5.5s;
 	transform: translateX(100%);
 }
 
 #description {
 	transform: translateX(0%);
-	width: 100%;
 	transition: 0.5s;
-	overflow: hidden;
 }
 
 #menubar_desc{
@@ -68,4 +73,11 @@
 	top: 50%;
 	color: white;
 	transform: rotate(-90deg);
+}
+
+#wrapper {
+	min-height: 0;
+	display: flex;
+	width: 100vw;
+	flex-grow: 1;
 }
