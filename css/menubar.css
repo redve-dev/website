@@ -1,6 +1,7 @@
-* {
-	outline: 1px solid red;
-}
+/**{*/
+	/*outline: 2px solid red;*/
+/*}*/
+
 #menubar {
 	background-color: #16253f;
 	transition: 0.5s;
@@ -8,16 +9,18 @@
 	overflow-y: scroll;
 	display: flex;
 	flex-direction: column;
-	width: 90%;
+	width: 100%;
+	transform: translateX(-200%);
+	margin-right: 0.5em;
 }
 
-#menubar_wrapper:hover > #menubar > .button {
+#menubar_wrapper:hover > #menubar  {
 	transform: translateX(0%);
 }
 
 .button {
+	white-space: nowrap;
 	border: none;
-	transform: translateX(-200%);
 	position: relative;
 	margin-top: 5px;
 	width: 100%;
@@ -39,18 +42,30 @@
 	background-color: #fd3d36;
 }
 
-#description {
-	transform: rotate(-90deg);
-	color: red;
-	font-size: 20px;
-}
-
 #menubar_wrapper {
 	display: flex;
-	flex-direction: row;
 	width: min(5%, 70px);
 	transition: 0.5s;
 }
 #menubar_wrapper:hover {
 	width: min(20%, 200px);
+}
+
+#menubar_wrapper:hover > #description {
+	transition: 0.5s;
+	transform: translateX(100%);
+}
+
+#description {
+	transform: translateX(0%);
+	width: 100%;
+	transition: 0.5s;
+	overflow: hidden;
+}
+
+#menubar_desc{
+	position: relative;
+	top: 50%;
+	color: white;
+	transform: rotate(-90deg);
 }
