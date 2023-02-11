@@ -1,3 +1,7 @@
+/**{*/
+	/*outline: 2px solid red;*/
+/*}*/
+
 #menubar {
 	background-color: #16253f;
 	transition: 0.5s;
@@ -5,8 +9,9 @@
 	overflow-y: scroll;
 	display: flex;
 	flex-direction: column;
-	width: 90%;
+	width: 100%;
 	transform: translateX(-200%);
+	margin-right: 0.5em;
 }
 
 #menubar_wrapper:hover > #menubar  {
@@ -14,6 +19,7 @@
 }
 
 .button {
+	white-space: nowrap;
 	border: none;
 	position: relative;
 	margin-top: 5px;
@@ -46,11 +52,12 @@
 }
 
 #menubar_wrapper:hover > #description {
-	width: 0%;
 	transition: 0.5s;
+	transform: translateX(100%);
 }
 
 #description {
+	transform: translateX(0%);
 	width: 100%;
 	transition: 0.5s;
 	overflow: hidden;
