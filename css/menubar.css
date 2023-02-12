@@ -1,3 +1,7 @@
+* {
+	outline: solid 2px red;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -21,9 +25,11 @@ body {
 	width: 100%;
 	margin-right: 0.5em;
 	margin-left: 0.5em;
+	transition: 0.5s;
 }
 
 #menubar_wrapper:hover > #menubar  {
+	transition: 0.5s;
 	transform: translateX(0%);
 }
 
@@ -39,14 +45,19 @@ body {
 	border-radius: 0.5em;
 
 	background-color: #26355f;
+	z-index: 1;
+	flex-grow: 1;
+	transition: 0.5s;
 }
 
 .button:hover {
 	background-color: #9d2500;
+	transition: 0.5s;
 }
 
 .button:active {
 	background-color: #fd3d36;
+	transition: 0.5s;
 }
 
 #menubar_wrapper {
@@ -59,13 +70,15 @@ body {
 }
 
 #menubar_wrapper:hover > #description {
-	transition: 5.5s;
+	transition: 0.5s;
 	transform: translateX(100%);
 }
 
 #description {
 	transform: translateX(0%);
 	transition: 0.5s;
+	flex-grow: 1;
+	z-index: 1000;
 }
 
 #menubar_desc{
