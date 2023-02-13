@@ -94,3 +94,38 @@ body {
 	width: 100vw;
 	flex-grow: 1;
 }
+
+#content {
+	height: 100vh;
+	transition: 0.5s;
+	z-index: 0;
+	width: 100vw;
+	overflow-y: scroll;
+	font-size: 20px;
+	border-radius: 1em 0 0 1em;
+}
+
+.text {
+	position: relative;
+	margin-top: 0;
+	right: 1%;
+	top: 1%;
+	left: 1%;
+	overflow-y: scroll;
+}
+
+#aboutme.text {
+	display: none;
+}
+
+#gitea.text {
+	display: none;
+}
+
+#projects.text {
+	display: none;
+}
+
+#contact.text {
+	display: none;
+}
