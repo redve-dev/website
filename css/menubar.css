@@ -17,12 +17,13 @@ body {
 }
 
 #menubar {
+	float: right;
 	background-color: #16253f;
 	overflow-y: scroll;
 	display: flex;
 	flex-direction: column;
 	transform: translateX(-200%);
-	width: 100%;
+	width: 120%;
 	margin-right: 0.5em;
 	margin-left: 0.5em;
 	transition: 0.5s;
@@ -62,23 +63,12 @@ body {
 
 #menubar_wrapper {
 	display: flex;
-	width: min(5%, 70px);
+	margin-left: -15vh;
+	width: min(20%, 200px);
 	transition: 0.5s;
 }
 #menubar_wrapper:hover {
-	width: min(20%, 200px);
-}
-
-#menubar_wrapper:hover > #description {
-	transition: 0.5s;
-	transform: translateX(100%);
-}
-
-#description {
-	transform: translateX(0%);
-	transition: 0.5s;
-	flex-grow: 1;
-	z-index: 1000;
+	margin-left: 0;
 }
 
 #menubar_desc{
