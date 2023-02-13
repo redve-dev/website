@@ -21,7 +21,7 @@ body {
 	transform: translateX(-200%);
 	width: 66%;
 	margin-right: 1.5em;
-	margin-left: 0.5em;
+	margin-left: 1.5em;
 	padding-left: 6%;
 	transition: 0.5s;
 }
@@ -62,7 +62,7 @@ body {
 	display: flex;
 	width: 30%;
 	transition: 0.5s;
-	background-color: white;
+	background-color: #16253f;
 	margin-left: -20%;
 }
 
@@ -115,6 +115,15 @@ body {
 }
 
 #description {
-	background-color: red;
+	background-color: #16253f;
 	width: 33%;
+}
+
+#menubar_desc {
+	position: relative;
+	top: 40%;
+	transform: rotate(-90deg);
+	color: white;
+	text-align: center;
+	font-size: 40px;
 }
