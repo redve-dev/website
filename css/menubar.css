@@ -19,11 +19,12 @@ body {
 	display: flex;
 	flex-direction: column;
 	transform: translateX(-200%);
-	width: 66%;
-	margin-right: 1.5em;
-	margin-left: 1.5em;
-	padding-left: 6%;
 	transition: 0.5s;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+
+	width: 66%;
+	padding-left: 7%;
 }
 
 #menubar_wrapper:hover > #menubar  {
@@ -116,6 +117,7 @@ body {
 
 #description {
 	background-color: #16253f;
+
 	width: 33%;
 }
 
