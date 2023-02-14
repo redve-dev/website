@@ -15,7 +15,6 @@ function setup_buttons(){
 	for(let i = 0; i < buttons_list.length; i++){
 		buttons_ids.push(buttons_list[i].id);
 	}
-	console.log(buttons_ids);
 	const buttons: MapType = {};
 	const text_fields: MapType = {};
 	for (const id of buttons_ids){
@@ -27,7 +26,8 @@ function setup_buttons(){
 }
 
 function enable_dark_mode(content){
-	content.style.backgroundColor = "rgb(60, 60, 60)";
+	const dark = 50;
+	content.style.backgroundColor = `rgb(${dark}, ${dark}, ${dark})`;
 	content.style.color = "rgb(255, 255, 255)";
 }
 
@@ -47,9 +47,16 @@ function setup_dark_mode(){
 	dark_mode_switch_function();
 }
 
+function output_my_age(){
+	const birthday = new Date("2002-11-12");
+	const years = new Date(Date.now().valueOf() - birthday.valueOf()).getFullYear() - 1970;
+	document.getElementById("age").innerHTML = years.toString();
+}
+
 function setup(){
 	setup_buttons();
 	setup_dark_mode();
+	output_my_age();
 }
 
 setup();
