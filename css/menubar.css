@@ -143,3 +143,10 @@ a {
 a:visited { 
 	color: red;
 }
+
+a::before {
+	content: "["
+}
+a::after {
+	content: "]"
+}
