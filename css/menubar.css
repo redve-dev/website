@@ -1,3 +1,7 @@
+:root {
+	--transition_speed: 0.4s;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -19,21 +23,24 @@ body {
 	display: flex;
 	flex-direction: column;
 	transform: translateX(-200%);
-	transition: 0.5s;
+	transition: var(--transition_speed);
 	margin-left: 0.5em;
 	margin-right: 0.5em;
 
 	width: 66%;
 	padding-left: 7%;
+	/*padding-left: calc(-9% + 100vw / 120);*/
 }
 
 #menubar_wrapper:hover > #menubar  {
-	transition: 0.5s;
+	transition: var(--transition_speed);
 	transform: translateX(0%);
 }
 
 .button {
-	white-space: nowrap;
+	/*white-space: nowrap;*/
+	word-wrap: normal;
+	text-align: center;
 	font-size: 20px;
 	color: white;
 	border: none;
@@ -46,29 +53,29 @@ body {
 	background-color: #26355f;
 	z-index: 1;
 	flex-grow: 1;
-	transition: 0.5s;
+	transition: var(--transition_speed);
 }
 
 .button:hover {
 	background-color: #9d2500;
-	transition: 0.5s;
+	transition: var(--transition_speed);
 }
 
 .button:active {
 	background-color: #fd3d36;
-	transition: 0.5s;
+	transition: var(--transition_speed);
 }
 
 #menubar_wrapper {
 	display: flex;
 	width: 30%;
-	transition: 0.5s;
+	transition: var(--transition_speed);
 	background-color: #16253f;
 	margin-left: -20%;
 }
 
 #menubar_wrapper:hover {
-	transition: 0.5s;
+	transition: var(--transition_speed);
 	margin-left: -10%;
 	transform: translateX(33%);
 }
@@ -82,7 +89,7 @@ body {
 
 #content {
 	height: 100vh;
-	transition: 0.5s;
+	transition: var(--transition_speed);
 	z-index: 0;
 	width: 100vw;
 	overflow-y: scroll;
