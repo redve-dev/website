@@ -1,5 +1,5 @@
 :root {
-	--transition_speed: 0.4s;
+	--transition_speed: 0.3s;
 }
 
 body {
@@ -29,6 +29,7 @@ body {
 
 	width: 66%;
 	padding-left: 7%;
+	padding-bottom: 1em;
 	/*padding-left: calc(-9% + 100vw / 120);*/
 }
 
@@ -46,7 +47,7 @@ body {
 	border: none;
 
 	width: 100%;
-	height: calc((100% - 15%) / 4);
+	flex-grow: 1;
 	margin-top: 5px;
 	border-radius: 0.5em;
 

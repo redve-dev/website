@@ -10,7 +10,12 @@ function show_one_text_field(id: string, text_fields: MapType){
 }
 
 function setup_buttons(){
-	const buttons_ids: readonly string[] = ["aboutme", "projects", "contact", "gitea"];
+	const buttons_ids: string[] = [];
+	const buttons_list = document.getElementById("menubar").children
+	for(let i = 0; i < buttons_list.length; i++){
+		buttons_ids.push(buttons_list[i].id);
+	}
+	console.log(buttons_ids);
 	const buttons: MapType = {};
 	const text_fields: MapType = {};
 	for (const id of buttons_ids){
