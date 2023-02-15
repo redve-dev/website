@@ -29,11 +29,15 @@ function enable_dark_mode(content){
 	const dark = 50;
 	content.style.backgroundColor = `rgb(${dark}, ${dark}, ${dark})`;
 	content.style.color = "rgb(255, 255, 255)";
+	document.documentElement.style.setProperty('--hover_colour', 'red');
+	document.documentElement.style.setProperty('--link_colour', '#1A73D9');
 }
 
 function disable_dark_mode(content){
 	content.style.backgroundColor = "rgb(255, 255, 255)";
 	content.style.color = "rgb(0, 0, 0)";
+	document.documentElement.style.setProperty('--hover_colour', 'red');
+	document.documentElement.style.setProperty('--link_colour', '#001eb3');
 }
 
 function setup_dark_mode(){

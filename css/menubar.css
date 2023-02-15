@@ -1,5 +1,7 @@
 :root {
 	--transition_speed: 0.3s;
+	--hover_colour: red;
+	--link_colour: #0155af;
 }
 
 body {
@@ -123,10 +125,11 @@ body {
 
 a, a:visited {
 	text-decoration: none;
-	color: #0a95ff;
+	color: var(--link_colour);
 }
 a:hover { 
-	color: whitesmoke;
+	color: var(--hover_colour);
+	text-decoration: underline;;
 }
 
 a::before {
