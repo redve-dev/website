@@ -5,6 +5,8 @@
 body {
 	margin: 0;
 	padding: 0;
+	width: 100vw;
+	height: 100vh;
 }
 
 #main {
@@ -137,11 +139,12 @@ body {
 	font-size: 40px;
 }
 
-a {
+a, a:visited {
 	text-decoration: none;
+	color: #0a95ff;
 }
-a:visited { 
-	color: red;
+a:hover { 
+	color: whitesmoke;
 }
 
 a::before {
