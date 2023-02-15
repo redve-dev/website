@@ -53,10 +53,32 @@ function output_my_age(){
 	document.getElementById("age").innerHTML = years.toString();
 }
 
+function setup_menubar_padding() {
+	let find_padding = () => {
+		const width = Math.max(
+			document.body.scrollWidth,
+			document.documentElement.scrollWidth,
+			document.body.offsetWidth,
+			document.documentElement.offsetWidth,
+			document.documentElement.clientWidth
+		);
+		// maps value from width [1080, 1920]px to [0, 7]%
+		const padding = ((width/120)-9);
+		//return Math.max(padding, 0);
+		return 7;
+	};
+	addEventListener("resize", () => {
+		document.getElementById("menubar").style.paddingLeft = find_padding().toString() + "%";
+	});
+	document.getElementById("menubar").style.paddingLeft = find_padding().toString() + "%";
+	console.log(find_padding());
+}
+
 function setup(){
 	setup_buttons();
 	setup_dark_mode();
 	output_my_age();
+	setup_menubar_padding();
 }
 
 setup();

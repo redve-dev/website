@@ -30,7 +30,7 @@ body {
 	margin-right: 0.5em;
 
 	width: 66%;
-	padding-left: 7%;
+	/*padding-left: 7%;*/
 	padding-bottom: 1em;
 	/*padding-left: calc(-9% + 100vw / 120);*/
 }
