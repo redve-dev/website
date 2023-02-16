@@ -120,7 +120,11 @@ body {
 	transform: rotate(-90deg);
 	color: white;
 	text-align: center;
-	font-size: 40px;
+	font-size: 50px;
+}
+
+.text#aboutme{
+	margin: 1em;
 }
 
 a, a:visited {
