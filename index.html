@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My First Web Page</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link type="text/css" rel="stylesheet" href="css/menubar.css" />
-		<link type="text/css" rel="stylesheet" href="css/content.css" />
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
 		<link type="text/css" rel="stylesheet" href="css/header.css" />
 		<link type="text/css" rel="stylesheet" href="css/switch.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+		<base target="_blank">
+		<title>Beniamin Deszert-Kłosowski</title>
 	</head>
 	<body>
 		<div id="main">
@@ -21,7 +21,7 @@
 					</span>
 				</label>
 				<div id="name">
-					Name Surname
+					Beniamin Deszert-Kłosowski
 				</div>
 				<img id="photo" src="img/photo.png" alt="photo" width="200" height="200">
 			</div>
@@ -30,29 +30,71 @@
 					<div id="menubar">
 						<button class="button" id="aboutme">About me</button>
 						<button class="button" id="projects">My projects</button>
-						<button class="button" id="gitea">My Gitea</button>
-						<button class="button" id="contact">My contacts</button>
+						<button class="button" id="links">My links</button>
+						<button class="button" id="skills">Skills</button>
 					</div>
-					<!--<div id="description">-->
-						<!--<p id="menubar_desc">Description</p>-->
-					<!--</div>-->
+					<div id="description">
+						<p id="menubar_desc">Sections</p>
+					</div>
 				</div>
 				<div id="content">
-					<p class="text" id="aboutme">
-						i study math
-					</p>
+					<div class="text" id="aboutme">
+						My name is Beniamin. I am <span id="age"></span>-year-old Polish student in the 2nd year of mathematics on University of Silesia. I program since 2017. <br>
+						I am so passionate about computers, that <a href="https://www.youtube.com/watch?v=OF67MHcMf_I">I even built working CPU models in minecraft</a>. I support open source software.<br>
+						From website you can already see, that I prefer to work on backend rather than UI design. I am also interested in data science, and analytics. <br>
+					</div>
 
-					<p class="text" id="projects">
-					projects
-					</p>
+					<div class="text" id="projects">
+						<ul>
+							<li> C and C++ projects:
+								<ul>
+									<li>GMTK 2022 game</li>
+									<li>Steam market monitor</li>
+									<li>Numerous game engines</li>
+									<li>Weather app backend</li>
+								</ul>
+							</li>
+							<li> Python:
+								<ul>
+									<li>League of Legends CLI rune manager</li>
+									<li>Pycalc</li>
+									<li>Numerous data analysis</li>
+								</ul>
+							</li>
 
-					<p class="text" id="gitea">
-					<a href="http://192.168.0.52:3000">Gitea</a>
-					</p>
+							<li> Bash:
+								<ul>
+									<li>DeepL dmenu module</li>
+									<li>Pmanager</li>
+								</ul>
+							</li>
+							<li> Lua:
+								<ul>
+									<li>Commit reminder</li>
+								</ul>
+							</li>
 
-					<p class="text" id="contact">
-					email: exampleemail@domain.com
-					</p>
+						</ul>
+					</div>
+
+					<div class="text" id="links">
+						<ul>
+							<li><a href="http://192.168.0.52:3000">Gitea</a></li>
+							<li><a href="http://192.168.0.52:4321">File hosting</a></li>
+							<li><a href="https://www.linkedin.com/in/beniamin-deszert-k%C5%82osowski-15b37425a/">LinkedIn</a></li>
+						</ul>
+					</div>
+
+					<div class="text" id="skills">
+						<ul>
+							<li>Languages: C, C++, Python, Bash, HTML, CSS, SQL</li>
+							<li>Tech: Git, Docker, Linux, Markdown, LaTeX, MariaDB</li>
+							<li>Libraries: STL, Matplotlib</li>
+							<br>
+							<li>Nonspecific: Problem solving, mathematics, logic, teamwork, communication</li>
+							<li>Languages: Polish (native), English (C1), German (A2)</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
