@@ -142,3 +142,13 @@ a::before {
 a::after {
 	content: "]"
 }
+
+#links a {
+	font-size: 1em;
+	transition: 0.2s;
+}
+
+#links a:hover {
+	font-size: 1.3em;
+	transition: 0.2s;
+}
