@@ -60,12 +60,12 @@ body {
 }
 
 .button:hover {
-	background-color: #9d2500;
+	background-color: #7d0500;
 	transition: var(--transition_speed);
 }
 
 .button:active {
-	background-color: #fd3d36;
+	background-color: #9d2500;
 	transition: var(--transition_speed);
 }
 
