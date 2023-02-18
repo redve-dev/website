@@ -21,11 +21,11 @@
 
 #photo {
 	position: relative;
-	right: 10%;
+	right: 5%;
 	bottom: 5%;
 	background-color: white;
 	float: right;
 	object-fit: contain;
 	border-radius: 20%;
-	scale: 0.8;
+	scale: 0.9;
 }
