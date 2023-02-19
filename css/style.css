@@ -60,12 +60,12 @@ body {
 }
 
 .button:hover {
-	background-color: #9d2500;
+	background-color: #7d0500;
 	transition: var(--transition_speed);
 }
 
 .button:active {
-	background-color: #fd3d36;
+	background-color: #9d2500;
 	transition: var(--transition_speed);
 }
 
@@ -91,6 +91,7 @@ body {
 }
 
 #content {
+	display: flex;
 	height: 100vh;
 	transition: var(--transition_speed);
 	z-index: 0;
@@ -141,4 +142,18 @@ a::before {
 }
 a::after {
 	content: "]"
+}
+
+#links a {
+	font-size: 1em;
+	transition: 0.2s;
+}
+
+#links a:hover {
+	font-size: 1.3em;
+	transition: 0.2s;
+}
+
+.text#projects{
+	justify-content: center;
 }

@@ -68,8 +68,7 @@ function setup_menubar_padding() {
 		);
 		// maps value from width [1080, 1920]px to [0, 7]%
 		const padding = ((width/120)-9);
-		//return Math.max(padding, 0);
-		return 7;
+		return Math.max(padding, 0);
 	};
 	addEventListener("resize", () => {
 		document.getElementById("menubar").style.paddingLeft = find_padding().toString() + "%";

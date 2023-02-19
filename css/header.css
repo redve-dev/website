@@ -1,7 +1,8 @@
 #header {
 	width: 100vw;
-	/*height: 15vh;*/
-	height: calc(auto + 5hv);
+	height: auto;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
 	background-color: #16253f;
 	padding-top: 30px;
 	box-sizing: border-box;
@@ -12,7 +13,6 @@
 #name {
 	position: relative;
 	top: calc(90% - 50px);
-	margin-right: 1em;
 	font-size: 50px;
 	font-family: 'Roboto', sans-serif;
 	display: inline-block;
@@ -22,11 +22,11 @@
 
 #photo {
 	position: relative;
-	right: 10%;
+	right: 5%;
 	bottom: 5%;
 	background-color: white;
 	float: right;
 	object-fit: contain;
 	border-radius: 20%;
-	scale: 0.8;
+	/*scale: 0.9;*/
 }
