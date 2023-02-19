@@ -91,6 +91,7 @@ body {
 }
 
 #content {
+	display: flex;
 	height: 100vh;
 	transition: var(--transition_speed);
 	z-index: 0;
@@ -153,8 +154,6 @@ a::after {
 	transition: 0.2s;
 }
 
-.details {
-	margin-top: 0;
-	padding-left: 2em;
-
+.text#projects{
+	justify-content: center;
 }
